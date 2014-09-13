@@ -109,7 +109,7 @@ OS X Homebrew users can use 'brew install node'.
         next \
           if !(requirejs.config.asset_allowed?(logical_path) || bower_logical_path)
 
-        asset = requirejs.env.find_asset(logical_path)
+        puts asset = requirejs.env.find_asset(logical_path)
 
         if asset
           # If a `bower.json` was found, then substitute the logical path with the parsed module name.
